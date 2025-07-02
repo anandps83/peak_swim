@@ -43,19 +43,29 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Logo image
+            Image.asset(
+              'assets/images/peak_swim_logo.png',
+              width: 150,
+              height: 150,
+              fit: BoxFit.contain,
+            ),
+            const SizedBox(height: 24),
+            // App name
             Text(
               'Peak Swim',
               style: GoogleFonts.montserrat(
-                fontSize: 50,
-                fontWeight: FontWeight.bold,
+                fontSize: 40,
+                fontWeight: FontWeight.w600, // SemiBold
                 color: Colors.white,
               ),
             ),
             const SizedBox(height: 10),
+            // Slogan
             Text(
               'Push Limits. Break Records!',
               style: GoogleFonts.montserrat(
-                fontSize: 20,
+                fontSize: 18,
                 fontWeight: FontWeight.w300,
                 color: Colors.white70,
               ),
